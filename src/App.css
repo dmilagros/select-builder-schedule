@@ -7,3 +7,36 @@
   width: 100%;
   text-align: center;
 }
+
+.buttons {
+  padding: 20px 0;
+  width: 350px;
+  float: right;
+}
+
+.buttons button {
+  padding: 7px 20px;
+  border-radius: 3px;
+}
+
+.buttons button:first-child {
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+
+.buttons button:last-child {
+  background-color: #175dc7;
+  border: none;
+  outline: none;
+  color: #fff;
+  float: right;
+}
+
+.buttons button:first-child:hover {
+  background-color: #d8d8d8;
+}
+
+.buttons button:last-child:hover {
+  background-color: #114188;
+}

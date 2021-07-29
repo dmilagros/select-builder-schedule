@@ -9,6 +9,10 @@ function App() {
         <h2>Select Builder Schedule - 2019 Fall Cohort</h2>
       </div>
       <Tab />
+      <div className="buttons">
+        <button>cancel</button>
+        <button>use this builder schedule</button>
+      </div>
     </div>
   );
 }
