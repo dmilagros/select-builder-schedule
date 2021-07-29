@@ -1,0 +1,112 @@
+.card-border {
+  box-shadow: rgba(0, 0, 0, 0.15) 3.4px 3.4px 3.2px;
+  width: 340px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #12beab;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.15) 3.4px 3.4px 3.2px;
+  width: 340px;
+  height: 67px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.card-text {
+  display: flex;
+  width: 200px;
+  height: 67px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card-text h3 {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.card-text a {
+  text-decoration: none;
+  color: #0091ff;
+}
+
+.card-image {
+  display: flex;
+  width: 100px;
+  height: 67px;
+  align-items: center;
+  align-content: center;
+  padding-right: auto;
+  padding-left: auto;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+}
+
+.image-gray {
+  width: 100px;
+  height: auto;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+@media screen and (max-width: 780px) {
+  .card {
+    box-shadow: rgba(0, 0, 0, 0.15) 3.4px 3.4px 3.2px;
+    width: 340px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .card-border {
+    box-shadow: rgba(0, 0, 0, 0.15) 3.4px 3.4px 3.2px;
+    width: 340px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: space-between;
+    border: 1px solid #12beab;
+  }
+
+  .card-text {
+    display: flex;
+    width: 150px;
+    height: 67px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .card-image {
+    display: flex;
+    height: 67px;
+    align-items: center;
+    align-content: center;
+    padding-right: auto;
+    padding-left: auto;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
