@@ -85,7 +85,7 @@ const DragNDrop = ({ data, titleSection, currentTab }) => {
   return (
     <>
       <div className="container-dnd">
-        <h3>{titleSection}</h3>
+        <h3>{titleSection.toUpperCase()}</h3>
         {currentTab === 0 && (
           <button
             className="dnd-links"
@@ -103,6 +103,7 @@ const DragNDrop = ({ data, titleSection, currentTab }) => {
         )}
         <span>Due date (Optional)</span>
       </div>
+
       <ul className="dnd">
         {list &&
           list.map((item, index) => (
@@ -119,6 +120,7 @@ const DragNDrop = ({ data, titleSection, currentTab }) => {
                 <div className="label-card">
                   {currentTab !== 0 && (
                     <img
+                      className="dnd-icon"
                       src={dragndropIcon}
                       alt="Drag and drop Icon"
                       width="30"

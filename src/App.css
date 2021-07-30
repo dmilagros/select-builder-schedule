@@ -40,3 +40,9 @@
 .buttons button:last-child:hover {
   background-color: #114188;
 }
+
+@media screen and (max-width: 780px) {
+  .buttons {
+    display: none;
+  }
+}

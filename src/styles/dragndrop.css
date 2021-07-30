@@ -91,10 +91,12 @@
 }
 
 .button-tabtitle-mobile {
-  width: 70px;
+  width: 120px;
+  padding: 5px 50px;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 3px;
+  margin-right: 10px;
 }
 
 .button-tabtitle-mobile:hover {
@@ -104,6 +106,7 @@
 .select-tabtitle-mobile {
   border: none;
   outline: none;
+  padding: 5px 25px;
   background-color: #f5f5f5;
   border-radius: 3px;
 }
@@ -137,7 +140,8 @@
   }
 
   .container-dnd {
-    max-width: 95%;
+    width: 360px;
+    margin-right: 15px;
   }
 
   .container-dnd span {
@@ -156,8 +160,12 @@
     display: flex;
     max-width: 350px;
     min-width: none;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+  }
+
+  .dnd-icon {
+    display: none;
   }
 
   .dnd {
@@ -172,8 +180,13 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
     margin: 0;
+  }
+
+  .input-date-card span {
+    font-size: 12px;
   }
 
   .date {
@@ -187,5 +200,21 @@
   .input-date span {
     display: flex;
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .label-card {
+    display: flex;
+    max-width: 350px;
+    min-width: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .container-dnd {
+    width: 320px;
+    margin-right: 0px;
   }
 }

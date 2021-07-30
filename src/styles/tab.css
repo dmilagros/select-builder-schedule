@@ -57,6 +57,10 @@
   background-color: #a5a5a5;
 }
 
+.buttons-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 780px) {
   .container-tab {
     display: flex;
@@ -82,10 +86,36 @@
 
   .tabtitle-mobile {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     align-content: space-between;
     padding: 10px;
     width: calc(100% - 20px);
+  }
+
+  .buttons-mobile {
+    width: 370px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .buttons-mobile button {
+    background-color: #175dc7;
+    border: none;
+    outline: none;
+    color: #fff;
+    float: right;
+    padding: 7px 20px;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .tabcontent {
+    width: calc(100%);
+    padding: 10px 0;
   }
 }

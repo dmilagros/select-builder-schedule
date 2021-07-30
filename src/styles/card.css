@@ -1,23 +1,25 @@
 .card-border {
-  box-shadow: rgba(0, 0, 0, 0.15) 3.4px 3.4px 3.2px;
+  -webkit-box-shadow: 2px 2px 8px 0px #a0a0a0;
+  box-shadow: 2px 2px 8px 0px #a0a0a0;
   width: 340px;
   height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
   border: 1px solid #12beab;
 }
 
 .card {
-  box-shadow: rgba(0, 0, 0, 0.15) 3.4px 3.4px 3.2px;
+  -webkit-box-shadow: 2px 2px 8px 0px #a0a0a0;
+  box-shadow: 2px 2px 8px 0px #a0a0a0;
   width: 340px;
   height: 67px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
 }
 
@@ -65,25 +67,28 @@
 
 @media screen and (max-width: 780px) {
   .card {
-    box-shadow: rgba(0, 0, 0, 0.15) 3.4px 3.4px 3.2px;
+    -webkit-box-shadow: 2px 2px 8px 0px #a0a0a0;
+    box-shadow: 2px 2px 8px 0px #a0a0a0;
     width: 340px;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 0px;
     justify-content: space-between;
   }
 
   .card-border {
-    box-shadow: rgba(0, 0, 0, 0.15) 3.4px 3.4px 3.2px;
+    -webkit-box-shadow: 2px 2px 8px 0px #a0a0a0;
+    box-shadow: 2px 2px 8px 0px #a0a0a0;
     width: 340px;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 0px; /* TODO: */
     justify-content: space-between;
     border: 1px solid #12beab;
   }
@@ -108,5 +113,19 @@
   .image {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .card {
+    width: 310px;
+    padding: 15px;
+    margin-left: 10px;
+  }
+
+  .card-border {
+    width: 310px;
+    padding: 15px;
+    margin-left: 10px;
   }
 }

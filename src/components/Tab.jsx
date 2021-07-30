@@ -144,6 +144,9 @@ const Tab = () => {
           ))}
         </select>
       </div>
+      <div className="buttons-mobile">
+        <button>use this builder schedule</button>
+      </div>
       <div className="tabcontent">
         {currentTab >= 1
           ? infoTab && (
