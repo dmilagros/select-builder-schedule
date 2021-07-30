@@ -51,8 +51,6 @@
 
 .label-card img {
   filter: gray;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
 }
 
 .label-card img:hover {

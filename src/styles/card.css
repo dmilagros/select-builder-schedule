@@ -60,8 +60,7 @@
 .image-gray {
   width: 100px;
   height: auto;
-  filter: gray;
-  -webkit-filter: grayscale(1);
+
   filter: grayscale(1);
 }
 
@@ -113,6 +112,13 @@
   .image {
     width: 100%;
     height: auto;
+    filter: grayscale(0);
+  }
+  .image-gray {
+    width: 100px;
+    height: auto;
+
+    filter: grayscale(1);
   }
 }
 
